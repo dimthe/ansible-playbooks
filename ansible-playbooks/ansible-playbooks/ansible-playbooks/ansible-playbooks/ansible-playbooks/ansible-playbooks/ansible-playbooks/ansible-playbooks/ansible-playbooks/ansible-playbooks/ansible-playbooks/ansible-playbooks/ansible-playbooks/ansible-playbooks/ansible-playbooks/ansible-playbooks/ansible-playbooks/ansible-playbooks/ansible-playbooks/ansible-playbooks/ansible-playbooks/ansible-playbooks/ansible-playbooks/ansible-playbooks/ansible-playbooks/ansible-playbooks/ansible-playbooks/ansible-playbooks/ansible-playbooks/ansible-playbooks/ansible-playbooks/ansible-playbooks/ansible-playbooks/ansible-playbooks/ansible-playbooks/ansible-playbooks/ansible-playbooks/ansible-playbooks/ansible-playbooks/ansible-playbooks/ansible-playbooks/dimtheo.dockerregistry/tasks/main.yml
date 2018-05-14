@@ -1,0 +1,19 @@
+
+  - name: copy certs
+    copy:
+      src=certs
+      dest=/data/registry/
+  - name: download registry 2
+    docker:
+      docker_api_version: auto
+      image: registry:2
+      state: reloaded
+      restart_policy: always
+      name: registry
+      ports: 5000:5000
+      volumes:
+        - /data/registry/certs:/certs
+        - /data/registry/data:/var/lib/registry
+      env:
+        REGISTRY_HTTP_TLS_CERTIFICATE: /certs/registry.crt
+        REGISTRY_HTTP_TLS_KEY: /certs/registry.key

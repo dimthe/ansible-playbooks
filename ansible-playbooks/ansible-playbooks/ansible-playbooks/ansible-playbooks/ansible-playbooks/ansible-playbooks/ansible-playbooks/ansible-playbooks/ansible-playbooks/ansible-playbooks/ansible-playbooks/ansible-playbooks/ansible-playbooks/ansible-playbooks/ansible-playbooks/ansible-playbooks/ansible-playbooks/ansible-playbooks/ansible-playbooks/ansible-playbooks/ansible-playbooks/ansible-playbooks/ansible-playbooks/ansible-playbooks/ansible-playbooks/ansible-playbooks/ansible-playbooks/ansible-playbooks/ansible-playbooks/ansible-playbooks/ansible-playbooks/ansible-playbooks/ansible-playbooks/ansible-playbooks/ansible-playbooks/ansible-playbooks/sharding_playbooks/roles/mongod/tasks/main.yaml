@@ -1,0 +1,8 @@
+- user: name=mongo shell=/usr/sbin/nologin createhome=no home=/opt/mongodb/ system=yes
+- file: path=/opt/mongodb/{{ item }} state=directory mode=0755 owner=mongo group=mongo
+  with_items:
+    - bin
+    - conf
+    - data
+    - logs
+- copy: src=mongod dest=/opt/mongodb/bin/ mode=0755 owner=mongo group=mongo

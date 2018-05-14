@@ -1,0 +1,2 @@
+[zones]
+client3 ansible_ssh_host=192.168.1.110 ansible_ssh_pass=elladara ansible_ssh_user=root

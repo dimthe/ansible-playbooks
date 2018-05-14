@@ -1,0 +1,7 @@
+- name: apt update
+  hosts: [ 'home_lan' ]
+
+  roles:
+
+    - role: 'debops.apt'
+      

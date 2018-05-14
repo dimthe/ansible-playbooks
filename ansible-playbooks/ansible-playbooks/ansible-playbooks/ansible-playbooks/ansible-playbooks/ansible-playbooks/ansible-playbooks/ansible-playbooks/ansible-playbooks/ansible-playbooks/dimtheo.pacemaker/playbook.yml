@@ -1,0 +1,28 @@
+    - hosts: cloud      
+      roles:
+        - dimtheo.pacemaker
+      vars:
+        pacemaker_package: pacemaker
+        pacemaker_ansible_group: cloud
+        pacemaker_user: hacluster
+        pacemaker_password: secret
+        pacemaker_cluster_name: foobar
+        pacemaker_properties:
+          stonith_enabled: "false"
+        pacemaker_resources:
+          - id: debian6
+            type: "ocf:heartbeat:IPaddr2"
+            options:
+              ip: "192.168.1.100"
+              cidr_netmask: 8
+            op:
+              - action: monitor
+                options:
+                  interval: 2s
+          - id: debian4
+            type: "systemd:named-chroot"
+            op:
+              - action: monitor
+                options:
+                  interval: 5s
+            clone: true

@@ -1,0 +1,7 @@
+[servers]
+ostack1  ansible_ssh_host=88.99.143.218 ansible_ssh_pass=1602dtauv$1 ansible_ssh_user=root
+ostack2  ansible_ssh_host=88.99.143.219 ansible_ssh_pass=1602dtauv$2 ansible_ssh_user=root
+ostack3  ansible_ssh_host=88.99.143.220 ansible_ssh_pass=1602dtauv$3 ansible_ssh_user=root
+ostack4  ansible_ssh_host=88.99.143.221 ansible_ssh_pass=1602dtauv$4 ansible_ssh_user=root
+ostack5  ansible_ssh_host=88.99.143.222 ansible_ssh_pass=1602dtauv$5 ansible_ssh_user=root
+ostack6  ansible_ssh_host=88.99.143.223 ansible_ssh_pass=1602dtauv$6 ansible_ssh_user=root

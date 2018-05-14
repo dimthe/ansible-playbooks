@@ -1,0 +1,8 @@
+- name: build the image
+  command: docker build -t haproxy:test /tmp/ .
+
+- name: tag the image using image ID
+  command: docker tag 104bec311bcd 192.168.1.81:5000/haproxy
+
+- name: push to our registry
+  command: docker push 192.168.1.81:5000/haproxy

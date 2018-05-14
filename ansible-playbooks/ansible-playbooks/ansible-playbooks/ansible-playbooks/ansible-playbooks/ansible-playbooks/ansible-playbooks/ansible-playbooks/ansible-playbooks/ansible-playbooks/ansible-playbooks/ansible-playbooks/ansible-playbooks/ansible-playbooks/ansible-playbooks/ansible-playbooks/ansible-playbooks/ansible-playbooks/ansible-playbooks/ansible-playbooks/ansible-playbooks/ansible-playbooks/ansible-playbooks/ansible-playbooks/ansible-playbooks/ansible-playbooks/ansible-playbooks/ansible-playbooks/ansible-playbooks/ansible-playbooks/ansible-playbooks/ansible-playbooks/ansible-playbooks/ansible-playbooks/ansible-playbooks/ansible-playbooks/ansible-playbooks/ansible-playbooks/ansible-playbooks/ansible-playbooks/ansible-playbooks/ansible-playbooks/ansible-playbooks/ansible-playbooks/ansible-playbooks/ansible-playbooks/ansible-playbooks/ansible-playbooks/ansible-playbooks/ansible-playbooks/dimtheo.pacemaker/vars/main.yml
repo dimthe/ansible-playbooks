@@ -1,0 +1,4 @@
+---
+pacemaker_package: pacemaker
+pacemaker_user: hacluster
+pacemaker_ansible_group: cloud

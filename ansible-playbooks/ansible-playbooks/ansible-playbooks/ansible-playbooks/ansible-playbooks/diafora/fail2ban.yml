@@ -1,0 +1,7 @@
+---
+- name: 'fail2ban playbook'
+  hosts: home_lan
+  user: root
+
+  roles:
+    - debops.fail2ban

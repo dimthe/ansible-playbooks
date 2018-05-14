@@ -1,0 +1,8 @@
+- hosts: aquila_shard_data
+  gather_facts: false
+  roles:
+    - { role: shard, name: data_aquila, replica: aquila, port: 27018 }
+- hosts: aquila_shard_arbiters
+  gather_facts: false
+  roles:
+    - { role: shard, name: arbiter_aquila, replica: aquila, port: 27020 }

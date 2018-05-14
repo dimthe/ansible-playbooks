@@ -1,0 +1,266 @@
+{
+    "ostack1": {
+        "ansible_host": "10.0.0.100",
+        "container_address": "10.0.0.100"
+    },
+    "ostack1_cinder_api_container-ae91c1c6": {
+        "ansible_host": "172.29.238.149",
+        "container_address": "172.29.238.149"
+    },
+    "ostack1_cinder_scheduler_container-ad42c9ee": {
+        "ansible_host": "172.29.238.222",
+        "container_address": "172.29.238.222"
+    },
+    "ostack1_galera_container-8002ac5e": {
+        "ansible_host": "172.29.236.111",
+        "container_address": "172.29.236.111"
+    },
+    "ostack1_glance_container-2310cc29": {
+        "ansible_host": "172.29.236.10",
+        "container_address": "172.29.236.10"
+    },
+    "ostack1_heat_apis_container-06fd85ee": {
+        "ansible_host": "172.29.237.252",
+        "container_address": "172.29.237.252"
+    },
+    "ostack1_heat_engine_container-182e502b": {
+        "ansible_host": "172.29.237.246",
+        "container_address": "172.29.237.246"
+    },
+    "ostack1_horizon_container-be7f2e6c": {
+        "ansible_host": "172.29.238.209",
+        "container_address": "172.29.238.209"
+    },
+    "ostack1_keystone_container-e6cd723c": {
+        "ansible_host": "172.29.239.72",
+        "container_address": "172.29.239.72"
+    },
+    "ostack1_memcached_container-6fd5a5af": {
+        "ansible_host": "172.29.239.6",
+        "container_address": "172.29.239.6"
+    },
+    "ostack1_neutron_agents_container-373b7f55": {
+        "ansible_host": "172.29.239.133",
+        "container_address": "172.29.239.133"
+    },
+    "ostack1_neutron_server_container-e9f93e57": {
+        "ansible_host": "172.29.237.31",
+        "container_address": "172.29.237.31"
+    },
+    "ostack1_nova_api_metadata_container-c9f99da6": {
+        "ansible_host": "172.29.239.153",
+        "container_address": "172.29.239.153"
+    },
+    "ostack1_nova_api_os_compute_container-6e8b0b9b": {
+        "ansible_host": "172.29.239.168",
+        "container_address": "172.29.239.168"
+    },
+    "ostack1_nova_api_placement_container-6c7d4be9": {
+        "ansible_host": "172.29.236.149",
+        "container_address": "172.29.236.149"
+    },
+    "ostack1_nova_conductor_container-bc66365c": {
+        "ansible_host": "172.29.238.193",
+        "container_address": "172.29.238.193"
+    },
+    "ostack1_nova_console_container-679fa062": {
+        "ansible_host": "172.29.237.176",
+        "container_address": "172.29.237.176"
+    },
+    "ostack1_nova_scheduler_container-4f28aa25": {
+        "ansible_host": "172.29.239.39",
+        "container_address": "172.29.239.39"
+    },
+    "ostack1_rabbit_mq_container-aef1e37d": {
+        "ansible_host": "172.29.239.105",
+        "container_address": "172.29.239.105"
+    },
+    "ostack1_repo_container-d280aee9": {
+        "ansible_host": "172.29.236.87",
+        "container_address": "172.29.236.87"
+    },
+    "ostack1_utility_container-9a2790df": {
+        "ansible_host": "172.29.239.144",
+        "container_address": "172.29.239.144"
+    },
+    "ostack2": {
+        "ansible_host": "10.0.0.102",
+        "container_address": "10.0.0.102"
+    },
+    "ostack2_cinder_api_container-26cd51da": {
+        "ansible_host": "172.29.236.234",
+        "container_address": "172.29.236.234"
+    },
+    "ostack2_cinder_scheduler_container-f00b2bd3": {
+        "ansible_host": "172.29.238.135",
+        "container_address": "172.29.238.135"
+    },
+    "ostack2_galera_container-b759bddd": {
+        "ansible_host": "172.29.236.67",
+        "container_address": "172.29.236.67"
+    },
+    "ostack2_glance_container-9c5e4b42": {
+        "ansible_host": "172.29.238.66",
+        "container_address": "172.29.238.66"
+    },
+    "ostack2_heat_apis_container-905b3b88": {
+        "ansible_host": "172.29.239.234",
+        "container_address": "172.29.239.234"
+    },
+    "ostack2_heat_engine_container-51027680": {
+        "ansible_host": "172.29.236.176",
+        "container_address": "172.29.236.176"
+    },
+    "ostack2_horizon_container-68771dec": {
+        "ansible_host": "172.29.238.210",
+        "container_address": "172.29.238.210"
+    },
+    "ostack2_keystone_container-3dfcb4b3": {
+        "ansible_host": "172.29.239.209",
+        "container_address": "172.29.239.209"
+    },
+    "ostack2_memcached_container-009db6d7": {
+        "ansible_host": "172.29.238.142",
+        "container_address": "172.29.238.142"
+    },
+    "ostack2_neutron_agents_container-778595d0": {
+        "ansible_host": "172.29.237.96",
+        "container_address": "172.29.237.96"
+    },
+    "ostack2_neutron_server_container-9bc50943": {
+        "ansible_host": "172.29.239.238",
+        "container_address": "172.29.239.238"
+    },
+    "ostack2_nova_api_metadata_container-a3a614eb": {
+        "ansible_host": "172.29.237.45",
+        "container_address": "172.29.237.45"
+    },
+    "ostack2_nova_api_os_compute_container-8aafabe9": {
+        "ansible_host": "172.29.236.167",
+        "container_address": "172.29.236.167"
+    },
+    "ostack2_nova_api_placement_container-c9229fab": {
+        "ansible_host": "172.29.239.231",
+        "container_address": "172.29.239.231"
+    },
+    "ostack2_nova_conductor_container-28bb62f2": {
+        "ansible_host": "172.29.238.69",
+        "container_address": "172.29.238.69"
+    },
+    "ostack2_nova_console_container-d27ed8a1": {
+        "ansible_host": "172.29.239.226",
+        "container_address": "172.29.239.226"
+    },
+    "ostack2_nova_scheduler_container-3e096b61": {
+        "ansible_host": "172.29.238.239",
+        "container_address": "172.29.238.239"
+    },
+    "ostack2_rabbit_mq_container-43d4b9ac": {
+        "ansible_host": "172.29.239.241",
+        "container_address": "172.29.239.241"
+    },
+    "ostack2_repo_container-219146b8": {
+        "ansible_host": "172.29.236.123",
+        "container_address": "172.29.236.123"
+    },
+    "ostack2_utility_container-9a1c9d8f": {
+        "ansible_host": "172.29.238.72",
+        "container_address": "172.29.238.72"
+    },
+    "ostack3": {
+        "ansible_host": "10.0.0.103",
+        "container_address": "10.0.0.103"
+    },
+    "ostack3_cinder_api_container-041338f8": {
+        "ansible_host": "172.29.236.231",
+        "container_address": "172.29.236.231"
+    },
+    "ostack3_cinder_scheduler_container-f4fcaa7e": {
+        "ansible_host": "172.29.238.93",
+        "container_address": "172.29.238.93"
+    },
+    "ostack3_galera_container-01f9d753": {
+        "ansible_host": "172.29.238.7",
+        "container_address": "172.29.238.7"
+    },
+    "ostack3_glance_container-7abdf986": {
+        "ansible_host": "172.29.236.238",
+        "container_address": "172.29.236.238"
+    },
+    "ostack3_heat_apis_container-cb1a50f4": {
+        "ansible_host": "172.29.239.65",
+        "container_address": "172.29.239.65"
+    },
+    "ostack3_heat_engine_container-0f0d7682": {
+        "ansible_host": "172.29.238.167",
+        "container_address": "172.29.238.167"
+    },
+    "ostack3_horizon_container-3ea7f149": {
+        "ansible_host": "172.29.236.184",
+        "container_address": "172.29.236.184"
+    },
+    "ostack3_keystone_container-e2ec10cc": {
+        "ansible_host": "172.29.237.180",
+        "container_address": "172.29.237.180"
+    },
+    "ostack3_memcached_container-95e6ddeb": {
+        "ansible_host": "172.29.236.22",
+        "container_address": "172.29.236.22"
+    },
+    "ostack3_nova_api_metadata_container-95ff005e": {
+        "ansible_host": "172.29.238.16",
+        "container_address": "172.29.238.16"
+    },
+    "ostack3_nova_api_os_compute_container-a67d129d": {
+        "ansible_host": "172.29.237.35",
+        "container_address": "172.29.237.35"
+    },
+    "ostack3_nova_api_placement_container-58ea2ad0": {
+        "ansible_host": "172.29.239.122",
+        "container_address": "172.29.239.122"
+    },
+    "ostack3_nova_conductor_container-352a8be4": {
+        "ansible_host": "172.29.236.208",
+        "container_address": "172.29.236.208"
+    },
+    "ostack3_nova_console_container-5d8fe3b1": {
+        "ansible_host": "172.29.237.117",
+        "container_address": "172.29.237.117"
+    },
+    "ostack3_nova_scheduler_container-9c416519": {
+        "ansible_host": "172.29.238.98",
+        "container_address": "172.29.238.98"
+    },
+    "ostack3_rabbit_mq_container-a45cb627": {
+        "ansible_host": "172.29.237.67",
+        "container_address": "172.29.237.67"
+    },
+    "ostack3_repo_container-9fde4f18": {
+        "ansible_host": "172.29.238.138",
+        "container_address": "172.29.238.138"
+    },
+    "ostack3_utility_container-e39a7e8f": {
+        "ansible_host": "172.29.237.163",
+        "container_address": "172.29.237.163"
+    },
+    "ostack4": {
+        "ansible_host": "10.0.0.104",
+        "container_address": "10.0.0.104"
+    },
+    "ostack5": {
+        "ansible_host": "10.0.0.105",
+        "container_address": "10.0.0.105"
+    },
+    "ostack5_neutron_agents_container-f7294e9b": {
+        "ansible_host": "172.29.239.210",
+        "container_address": "172.29.239.210"
+    },
+    "ostack5_neutron_server_container-8c68effc": {
+        "ansible_host": "172.29.238.73",
+        "container_address": "172.29.238.73"
+    },
+    "ostack6": {
+        "ansible_host": "10.0.0.106",
+        "container_address": "10.0.0.106"
+    }
+}

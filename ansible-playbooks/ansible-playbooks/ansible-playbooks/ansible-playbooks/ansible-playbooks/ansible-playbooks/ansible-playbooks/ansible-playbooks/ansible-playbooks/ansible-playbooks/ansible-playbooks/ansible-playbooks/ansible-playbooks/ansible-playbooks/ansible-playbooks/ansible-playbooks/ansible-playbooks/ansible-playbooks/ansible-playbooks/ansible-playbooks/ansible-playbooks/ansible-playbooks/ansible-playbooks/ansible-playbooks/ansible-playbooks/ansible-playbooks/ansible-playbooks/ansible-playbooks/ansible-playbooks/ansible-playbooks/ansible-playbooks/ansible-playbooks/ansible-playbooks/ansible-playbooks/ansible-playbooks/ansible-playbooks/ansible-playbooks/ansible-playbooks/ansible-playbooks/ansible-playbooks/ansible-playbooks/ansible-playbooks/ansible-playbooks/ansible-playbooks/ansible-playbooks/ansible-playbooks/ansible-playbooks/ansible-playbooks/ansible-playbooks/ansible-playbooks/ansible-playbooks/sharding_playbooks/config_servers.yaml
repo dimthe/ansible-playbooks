@@ -1,0 +1,4 @@
+- hosts: config_servers
+  gather_facts: false
+  roles:
+    - { role: config, name: config, port: 27019 }

@@ -1,0 +1,6 @@
+- hosts: [ home_lan ]
+  sudo: yes
+
+  tasks: 
+  - name: Execute script
+    command: /home/dimgr/uid.sh

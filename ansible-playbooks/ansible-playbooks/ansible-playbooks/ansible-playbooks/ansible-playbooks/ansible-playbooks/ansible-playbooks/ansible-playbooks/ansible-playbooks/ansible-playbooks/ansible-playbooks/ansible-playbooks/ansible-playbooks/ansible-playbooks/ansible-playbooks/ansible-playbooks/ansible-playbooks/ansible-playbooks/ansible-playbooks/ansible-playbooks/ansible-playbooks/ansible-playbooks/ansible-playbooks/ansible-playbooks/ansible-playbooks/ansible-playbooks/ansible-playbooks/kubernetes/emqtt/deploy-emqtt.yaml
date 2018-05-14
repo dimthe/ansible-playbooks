@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: emqtt
+  name: emqtt
+spec:
+  replicas: 4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: emqtt
+    spec:
+      containers:
+      - image: orctom/emqtt
+        name: emqtt
+        ports:
+        - containerPort: 1883
+        - containerPort: 8083
+        - containerPort: 18083
+        resources: {}
+      restartPolicy: Always
+status: {}

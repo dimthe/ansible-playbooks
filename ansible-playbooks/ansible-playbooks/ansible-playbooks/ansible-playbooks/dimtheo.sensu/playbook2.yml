@@ -1,0 +1,11 @@
+  - hosts: sensu_masters
+
+    vars:
+      sensu_master: true
+      sensu_include_dashboard: true
+      rabbitmq_host: true
+      redis_host: true
+      sensu_api_host: true
+
+    roles:
+      - dimtheo.sensu

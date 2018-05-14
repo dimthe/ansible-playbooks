@@ -1,0 +1,30 @@
+- name: install debian security updates
+  hosts: mongo_servers
+  sudo: yes
+  vars:
+     wheezy_security_src_file: ./files/wheezy_security.list
+     jessie_security_src_file: ./files/jessie_security.list
+     security_repo_file: /tmp/ansible-nis-debian-security_repo_file.list
+  tasks:
+     - name: copy wheezy security repo description
+       copy: src={{wheezy_security_src_file}} dest={{security_repo_file}}
+       register: copy_result
+       when: ansible_distribution_release == "wheezy"
+     - name: copy jessie security repo description
+       copy: src={{jessie_security_src_file}} dest={{security_repo_file}}
+       register: copy_result
+       when: ansible_distribution_release == "jessie"
+     - name: ensure aptitude is installed
+       apt: name=aptitude state=present
+       register: aptitude_install_result
+     - name: update package list
+       shell: aptitude update -o Dir::Etc::SourceList="{{security_repo_file}}"
+       when: copy_result|success
+       when: aptitude_install_result|success
+       register: aptitude_update_result
+     - name: delete security repo description
+       shell: rm -rf {{security_repo_file}}
+       when: copy_result|success
+     - name: install security updates
+       shell: aptitude upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
+       when: aptitude_update_result|success

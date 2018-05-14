@@ -1,0 +1,9 @@
+- hosts: mongo_servers
+  gather_facts: false
+  tasks:
+    - lineinfile: dest=/etc/hosts regexp='^192\.168\.1\.96 mongo01$' line='192.168.1.96 mongo01' state=present
+    - lineinfile: dest=/etc/hosts regexp='^192\.168\.1\.95 mongo02$' line='192.168.1.95 mongo02' state=present
+    - lineinfile: dest=/etc/hosts regexp='^192\.168\.1\.97 mongo03$' line='192.168.1.97 mongo03' state=present
+    - lineinfile: dest=/etc/hosts regexp='^192\.168\.1\.98 mongo04$' line='192.168.1.98 mongo04' state=present
+    - lineinfile: dest=/etc/hosts regexp='^192\.168\.1\.102 mongo05$' line='192.168.1.102 mongo05' state=present
+    - lineinfile: dest=/etc/hosts regexp='^192\.168\.1\.99 mongo06$' line='192.168.1.99 mongo06' state=present

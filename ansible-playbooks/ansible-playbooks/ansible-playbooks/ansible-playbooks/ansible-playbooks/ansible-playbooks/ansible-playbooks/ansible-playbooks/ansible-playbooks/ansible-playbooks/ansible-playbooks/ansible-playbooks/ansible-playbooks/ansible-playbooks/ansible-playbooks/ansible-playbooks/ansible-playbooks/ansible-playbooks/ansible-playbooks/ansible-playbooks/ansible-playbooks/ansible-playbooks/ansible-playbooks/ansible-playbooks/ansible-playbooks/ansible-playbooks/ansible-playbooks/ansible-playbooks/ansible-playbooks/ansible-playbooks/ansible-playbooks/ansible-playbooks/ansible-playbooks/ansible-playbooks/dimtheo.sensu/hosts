@@ -1,0 +1,14 @@
+[sensu_masters]
+sensu-master  ansible_ssh_host=192.168.1.105 ansible_ssh_pass=elladara ansible_ssh_user=root
+
+[redis_servers]
+redis-server ansible_ssh_host=192.168.1.106 ansible_ssh_pass=elladara ansible_ssh_user=root
+
+[rabbitmq_servers] 
+rabbitmq-server ansible_ssh_host=192.168.1.107 ansible_ssh_pass=elladara ansible_ssh_user=root
+
+[zones]
+client1 ansible_ssh_host=192.168.1.108 ansible_ssh_pass=elladara ansible_ssh_user=root
+client2 ansible_ssh_host=192.168.1.109 ansible_ssh_pass=elladara ansible_ssh_user=root
+client3 ansible_ssh_host=192.168.1.110 ansible_ssh_pass=elladara ansible_ssh_user=root
+#debian21 ansible_ssh_host=192.168.1.81 ansible_ssh_pass=elladara ansible_ssh_user=root

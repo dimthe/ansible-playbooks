@@ -1,0 +1,8 @@
+- hosts: cygnus_shard_data
+  gather_facts: false
+  roles:
+    - { role: shard, name: data_cygnus, replica: cygnus, port: 27018 }
+- hosts: cygnus_shard_arbiters
+  gather_facts: false
+  roles:
+    - { role: shard, name: arbiter_cygnus, replica: cygnus, port: 27020 }

@@ -1,0 +1,13 @@
+1. kubectl create -f solr-service.yaml
+
+kubectl get services prepei na mas to dixnei opos kai sto kubectl get endpoints
+
+2. kubectl create -f solr-rc.yaml
+
+3. kubectl get rc , prepei na doume to solr-rc
+
+4. kubectl get logs podname mporoume na doume logs tou solr pod
+
+5. kubectl exec -it solr-rc-hq0g3 -- /bin/bash mpenoume sto solr kai me bin/solr status vlepoume oti trexei
+
+6. gia na megalosi to solr cluster dinw  kubectl scale rc solr-rc --replicas=4 

@@ -1,0 +1,20 @@
+---
+# tasks/Debian/main.yml: Debian specific set-up
+
+
+  - include_vars: "{{ ansible_distribution }}.yml"
+
+  - name: Ensure the Sensu APT repo GPG key is present
+    apt_key:
+      url: http://repositories.sensuapp.org/apt/pubkey.gpg
+      state: present
+
+  - name: Ensure the Sensu Core APT repo is present
+    apt_repository:
+      repo: 'deb     http://repositories.sensuapp.org/apt sensu main'
+      state: present
+      update_cache: true
+
+  - name: Ensure Sensu is installed
+    apt: name={{ sensu_package }} state={{ sensu_pkg_state }}
+    #apt: name=sensu_0.21.0-2_amd64.deb state=installed

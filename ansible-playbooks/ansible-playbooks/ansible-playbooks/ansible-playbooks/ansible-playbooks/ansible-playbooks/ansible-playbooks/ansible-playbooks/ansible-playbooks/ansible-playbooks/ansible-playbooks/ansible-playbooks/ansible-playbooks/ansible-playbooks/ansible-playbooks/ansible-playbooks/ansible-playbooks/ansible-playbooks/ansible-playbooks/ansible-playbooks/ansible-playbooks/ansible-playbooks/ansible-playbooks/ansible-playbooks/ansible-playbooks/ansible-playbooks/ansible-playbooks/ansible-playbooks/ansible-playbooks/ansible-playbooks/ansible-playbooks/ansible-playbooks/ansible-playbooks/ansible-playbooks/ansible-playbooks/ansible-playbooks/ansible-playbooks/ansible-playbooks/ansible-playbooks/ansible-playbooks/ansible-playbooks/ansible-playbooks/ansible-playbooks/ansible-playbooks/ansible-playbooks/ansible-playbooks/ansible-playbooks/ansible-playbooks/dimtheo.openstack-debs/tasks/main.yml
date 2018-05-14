@@ -1,0 +1,16 @@
+---
+# tasks file for dimtheo.openstack-debs
+- name: Install Openstack-ansible required packages
+  apt: name={{item}} state=installed
+  with_items:
+       - debootstrap
+       - bridge-utils
+       - ifenslave
+       - ifenslave-2.6
+       - lsof
+       - lvm2
+       - ntp
+       - ntpdate
+       - tcpdump
+       - vlan 
+       - openssh-server
