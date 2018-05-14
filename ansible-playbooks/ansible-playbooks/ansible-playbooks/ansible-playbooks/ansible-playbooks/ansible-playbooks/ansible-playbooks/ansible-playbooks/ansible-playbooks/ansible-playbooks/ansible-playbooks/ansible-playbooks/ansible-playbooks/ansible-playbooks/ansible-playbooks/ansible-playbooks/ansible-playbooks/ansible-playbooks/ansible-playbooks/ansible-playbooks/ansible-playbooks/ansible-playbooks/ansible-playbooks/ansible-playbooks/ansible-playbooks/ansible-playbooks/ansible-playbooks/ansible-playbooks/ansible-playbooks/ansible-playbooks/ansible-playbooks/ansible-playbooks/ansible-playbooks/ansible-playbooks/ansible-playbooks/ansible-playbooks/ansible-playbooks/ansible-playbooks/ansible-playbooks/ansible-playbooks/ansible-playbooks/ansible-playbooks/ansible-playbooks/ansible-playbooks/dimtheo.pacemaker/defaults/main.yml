@@ -1,4 +1,0 @@
----
-pacemaker_password: hacluster
-pacemaker_ansible_group: cloud
-pacemaker_package: pacemaker

@@ -1,5 +1,0 @@
----
-# tasks file for dimtheo.dockerbuild
-- name: Build a docker image from a Dockerfile
-  connection: 'local'
-  command: docker build -t redis /home/dimtheo/docker 

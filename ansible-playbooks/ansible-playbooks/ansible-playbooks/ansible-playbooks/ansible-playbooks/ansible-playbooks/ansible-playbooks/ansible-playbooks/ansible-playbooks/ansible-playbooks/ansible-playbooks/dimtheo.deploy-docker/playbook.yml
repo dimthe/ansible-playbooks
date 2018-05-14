@@ -1,8 +1,0 @@
----
-
-- name: install and deploy docker
-  hosts: all
-  become: True
-
-  roles:
-    - { role: dimtheo.deploy-docker }

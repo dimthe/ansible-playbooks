@@ -1,8 +1,0 @@
-1. ftiaxnw to erlang cookie gia ta nodes
-
-kubectl create secret generic rabbitmq-config --from-literal=erlang-cookie=c-is-for-cookie-thats-good-enough-for-me
-
-2. prepei na exw kanei pv kai pvc kai na einai bound
-
-3. trexw to yaml , kubectl create -f rabbitmq.yaml
-

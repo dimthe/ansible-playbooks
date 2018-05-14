@@ -1,6 +1,0 @@
-- hosts: [home_lan]
-  remote_user: root
-  tasks:
-    - name: to make sure apache has started
-      service: name=apache2 state=started
-       

@@ -1,4 +1,0 @@
-- hosts: clients
-  gather_facts: false
-  roles:
-    - client

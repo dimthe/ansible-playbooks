@@ -1,6 +1,0 @@
-[test]
-debian1  ansible_ssh_host=192.168.1.81 ansible_ssh_pass=elladara ansible_ssh_user=root
-[web]
-debian2  ansible_ssh_host=192.168.1.80 ansible_ssh_pass=elladara ansible_ssh_user=root
-[https]  
-solr    ansible_ssh_host=192.168.1.77 ansible_ssh_pass=elladara ansible_ssh_user=root

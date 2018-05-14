@@ -1,4 +1,0 @@
-- file: path=/opt/mongodb/data/{{ name }} state=directory mode=0755 owner=mongo group=mongo
-- template: src=config.conf dest=/opt/mongodb/conf/{{ name }}.conf mode=0644 owner=mongo group=mongo
-- template: src=config.service dest=/etc/systemd/system/{{ name }}.service mode=0644 owner=mongo group=mongo
-- service: name={{ name }} enabled=yes state=started

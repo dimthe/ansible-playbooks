@@ -1,3 +1,0 @@
-- hosts: [home_lan]
-  roles:
-  - role: jnv.unattended-upgrades

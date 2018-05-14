@@ -1,4 +1,0 @@
-- hosts: mongos_servers
-  gather_facts: false
-  roles:
-    - { role: mongos, name: mongos, port: 27017, configs: "mongo01:27019,mongo02:27019,mongo03:27019" }

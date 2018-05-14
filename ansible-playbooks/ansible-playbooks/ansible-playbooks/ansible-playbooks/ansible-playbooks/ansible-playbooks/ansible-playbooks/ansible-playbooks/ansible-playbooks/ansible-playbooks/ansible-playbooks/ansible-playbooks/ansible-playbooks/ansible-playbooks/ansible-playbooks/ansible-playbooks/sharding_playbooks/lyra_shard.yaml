@@ -1,8 +1,0 @@
-- hosts: lyra_shard_data
-  gather_facts: false
-  roles:
-    - { role: shard, name: data_lyra, replica: lyra, port: 27018 }
-- hosts: lyra_shard_arbiters
-  gather_facts: false
-  roles:
-    - { role: shard, name: arbiter_lyra, replica: lyra, port: 27020 }
